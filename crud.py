@@ -18,7 +18,7 @@ class ItemsUpdate(BaseModel):
 app = FastAPI()
 
 origins = [
-     "http://localhost:", #host
+     "http://localhost:",#host
      "http://:",#network
 ]
 
