@@ -18,8 +18,8 @@ class ItemsUpdate(BaseModel):
 app = FastAPI()
 
 origins = [
-    //host "http://localhost:",
-    //network "http://:",
+    #host "http://localhost:",
+    #network "http://:",
 ]
 
 app.add_middleware(
