@@ -21,8 +21,8 @@ class ItemsUpdate(BaseModel):
 app = FastAPI()
 
 origins = [
-    "http://localhost:",  # Host
-    "http://:",  # Network
+    "http://localhost:5173",
+    "http://192.168.0.8:5173",
 ]
 
 app.add_middleware(
@@ -52,7 +52,7 @@ def create_items(items: Items):
     # Adicionar o novo item a lista
     db.append(novo_item)
 
-    return {"mensagem": "Item criado com sucesso", "Items": novo_item}
+    return {"mensagem": "Item criado com sucesso", "items": novo_item}
 
 
 @app.get("/items")
